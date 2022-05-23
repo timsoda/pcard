@@ -377,6 +377,8 @@ document.getElementById("bcardclearedit").addEventListener("click", function(){
 });
 
 document.getElementById("bcarddownload").addEventListener("click", function(){
+    window.scrollTo(0, 0);
+
     $("#bcardtoolkit").hide();
     $("#bcarddone").hide();
     $("#bcardsavect").hide();
@@ -385,7 +387,7 @@ document.getElementById("bcarddownload").addEventListener("click", function(){
     $("#bcardedit").show();
     $("#bcarddownload").hide();
     $("#bcardclearedit").show();
-
+    
     html2canvas(document.getElementById("mirrowmirrow")).then(function (canvas){
         let a = document.createElement('a');
         a.href = canvas.toDataURL("image/jpeg");

@@ -452,7 +452,9 @@ document.getElementById("btdcardclearedit").addEventListener("click", function()
     $("#btdcardclearedit").hide();
 });
 
-document.getElementById("btdcarddownload").addEventListener("click", function(){    
+document.getElementById("btdcarddownload").addEventListener("click", function(){  
+    window.scrollTo(0, 0);
+      
     $("#btdcarddone").hide();
     $("#btdcardsavect").hide();
     $("#btdcardclear").hide();
