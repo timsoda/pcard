@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Projecting Rotary</title>
+  <meta property="og:image" content="https://phototag.netlify.app/assets/img/metabdcard.jpg" />
+  <meta property="og:title" content="Projecting Rotary" />
+  <meta property="og:description" content="It's your love ones Birthday. So Customise a Digital Birthday Card that will live on the internet forever. Phototag Mobile Apps, Web Apps & Programs Projecting Rotary" />
+  <meta property="og:url" content="https://phototag.netlify.app/birthdaycard.html" />
+  <meta content="It's your love ones Birthday. So Customise a Digital Birthday Card that will live on the internet forever. Phototag Mobile Apps, Web Apps & Programs Projecting Rotary" name="description">
+  <meta content="Business Card, Birthday Card, Business, Birthday, Design, Graphics, Color, Colour" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="font-awesome/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+.card {
+    background: #ffffff;
+    border: none;
+    width: 100%;  
+	display: flex;	
+	flex-direction: row;
+	position: relative;
+	border-radius: 0;
+}
+.leftmain {
+  width: 50%;
+  /*clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%); 
+  clip-path: polygon(0% 10%, 100% 10%, 90% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 90% 0%, 100% 100%, 0% 100%); 
+  clip-path: polygon(0% 0%, 100% 0%, 90% 0%, 100% 100%, 10% 100%);
+  clip-path: polygon(10% 0%, 100% 0%, 100% 0%, 80% 100%, -7% 100%); //CHOSSEN BUT DON'T APPEAR IN SNAP
+  */
+  transform: skew(3deg, 0deg)
+
+}
+.leftpigrim{
+	width: 100%;
+}
+.rightmain {
+	width: 50%;
+}
+.tommain{
+	width: 100%;
+	height: 50px;
+	z-index: 2;
+	position: relative;
+	margin-top: -1px;
+}
+.hpbd{
+	font-family: lobster;
+	font-size: 32px;
+    text-align: center;
+	padding-top: 40px;
+}
+.celebrantname{
+	font-family: lora;
+	text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+	
+}
+.messagedivider{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding-top: 10px;
+}
+.bmessagedivider{
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	padding-bottom: 30px;
+}
+
+.bdmessage{
+    padding: 0.5rem 1rem;
+    font-size: 10px;
+}
+.wisherpix {
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 0deg);
+    font-size: 0px;
+    background: #c8c2c2;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -50px;
+	z-index: 3;
+}
+.whname{
+	text-align: right;
+	color: white;
+    padding-right: 80px;
+    padding-top: 10px;
+	font-size: 11px;
+}
+.whfrom{
+	text-align: right;
+	color: white;
+    padding-right: 80px;
+    padding-top: 10px;
+}
+.myrttopright{
+	position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    margin-top: 4px;
+    margin-right: 0px;
+}
+.myrttopdownleft{
+	position: absolute;
+    bottom: 0;
+    z-index: 5;
+    opacity: 0.1;
+    color: black;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    font-size: 7px;
+}
+.fvlabel{
+  font-size: 11px;
+}
+.cbsbtn-secondary {
+	font-size:8px;
+	text-align:center;
+	width: 40px; 
+	height: 20px;
+	color: #fff;  
+	cursor: pointer; 
+	border: 1px solid #6c757d; 
+	background-color: 
+	#6c757d; display: 
+	inline-block; 
+	border-radius: 0.25rem;
+}
+
+.cbsbtn-secondary:hover {
+    color: #fff;
+    background-color: #5c636a;
+    border-color: #565e64;
+}
+.cbsbtn-secondary.active{
+	background-color: #dc3545;
+    border-color: #dc3545;
+}
+.tooltt{
+	font-size: 10px;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="./">Sticker</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="./">Home</a></li>
+
+          
+          <!--<li><a href="./" class="getstarted">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Photo Card</h2>
+          <ol>
+            <li><a href="./">Sticker</a></li>
+            <li>Photo Card</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+	<section id="team" class="team section-bg">
+      <div class="container">
+
+        
+		
+  
+  
+	  </div>
+	</section>
+	<style>
+
+ 
+
+	</style>
+	<!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        
+
+        <div class="row">
+
+    
+		  <div class="col-lg-6" >
+		  <div id="mirrowmirrow" style="background:#dbdbdb; max-width:100%; padding-left: 5px; padding-top:5px; padding-bottom: 5px; ">
+		  
+			<div id="btdcard" class="card">
+			<div id="clbrantImg" class="leftmain" style="background-image: url('assets/img/214emasmi.jpg'); background-position: top center; background-size: cover;">
+			</div>
+			<div class="rightmain">
+			<h1 id="hpdfcele" class="hpbd">Happy Birthday</h1>
+			<h3 id="clbrantName" class="celebrantname">Rotaractor Mercy Obinwa</h3>
+			<div  class="messagedivider"></div>
+			<div id="brdmsg" class="bdmessage">
+			It is common to make birthday cards out of paper. But this time I want to make it special and for the most special being on earth today, which offcourse is you. You deserve the very best of everything, embrace it, be confident, and embark on a future of limitless possibilities and opportunities. Happy birthday.
+			</div>
+			<div class="bmessagedivider"></div>
+			<div class="myrttopright"><img src="assets/img/543_rotary.png" alt="" width="140px"></div>
+			<div class="myrttopdownleft">https://phototag.netlify.app/</div>
+			<div id="cotsyImg" class="wisherpix" style="background-image: url('assets/img/testimonials-2.jpg'); background-size: cover;">
+			</div>
+			</div>
+			</div>
+			<div id="cotsyFt" class="tommain" style="background:#9d459d;">
+			
+			<div id="cotsyName" class="whname"><i><b>Courtesy:</b></i><br>Rotaractor Favour Oghenebrume (RAC Asaba Urban)</div>
+			</div>
+			
+			
+			
+		  </div>
+		  </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member align-items-start">
+			<div id="bcardtoolkit" class="col-lg-12" >
+			<!--<div class="row">-->
+				<div class="col-lg-12" style="margin-bottom:10px;">
+				<div id="topmintemp"></div>
+				</div>
+				<div> </div>
+			<!--</div>-->
+			<!--<div class="row">-->
+				<div id="btcdtpledt" class="col-lg-12" style="display:none;">
+				<div>
+				<center><button id="editbrdcrd" class="btn btn-warning btn-sm text-white" style="margin-top:10px;">Back To Birthday Card</button></center>
+				</div>
+				
+				<div class="col-lg-12" style="margin-top:20px;">
+				<div>
+				<div class="tooltt text-danger"><b>Celebrant Image Position</b></div>
+				<div style="padding-top: 5px;">
+				<button id="" class="cbsbtn-secondary" onclick="insuv('top center')">Reset</button>
+				<!--<button id="" class="cbsbtn-secondary" onclick="insuv('left center')">L C</button>-->
+				<button id="" class="cbsbtn-secondary" onclick="insuv('left bottom')">L B</button>
+				<button id="" class="cbsbtn-secondary" onclick="insuv('right top')">R T</button>
+				<button id="" class="cbsbtn-secondary" onclick="insuv('right bottom')">R B</button>
+				<button id="" class="cbsbtn-secondary" onclick="insuv('right center')">R C</button>
+				<!--<button id="" class="cbsbtn-secondary" onclick="insuv('center top')">C T</button>-->
+				<button id="" class="cbsbtn-secondary" onclick="insuv('center center')">C C</button>
+				<button id="" class="cbsbtn-secondary" onclick="insuvv('adio')"><i class="fas fa-arrow-left"></i></button>
+				<button id="" class="cbsbtn-secondary" onclick="insuvv('mdio')"><i class="fas fa-arrow-right"></i></button>
+				<button id="" class="cbsbtn-secondary" onclick="insuvvv('adio')"><i class="fas fa-arrow-up"></i></button>
+				<button id="" class="cbsbtn-secondary" onclick="insuvvv('mdio')"><i class="fas fa-arrow-down"></i></button>
+				</div>
+				</div>
+				</div>
+				
+				<div class="col-lg-12" style="margin-top:20px;">
+				<input type="hidden" id="celebrantbpstIN" name="celebrantbpstIN">
+				<div class="tooltt text-danger"><b>Background</b> <button id="manson1opion" class="cbsbtn-secondary active">1</button> <button id="manson2opion" class="cbsbtn-secondary">2</button> <button id="manson3opion" class="cbsbtn-secondary">3</button></div>
+				
+				<div id="setofcelebg" style="padding-top: 5px;">
+				<div style="float: left;"><input type="color" id="backgroundinfo1IN" name="backgroundinfo1IN" class="form-control" style="width: 60px;" value="#ffffff"></div> 
+				<div id="backgroundinfoS" style="font-size: 12px; padding-top: 4px; padding-left: 10px; padding-right: 10px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				<div id="directionalbh" style="margin-top:8px;"></div>
+				
+				</div>
+				
+				<div class="col-lg-12" style="margin-top:20px;">
+				<div style="float: left; margin-right:20px;">
+				<div class="tooltt text-danger"><b>Happy Birthday</b></div>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="happybirdayIN" name="happybirdayIN" class="form-control" style="width: 60px;" value="#444444"></div> 
+				<div id="happybirdayS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				
+				<div style="float: left; margin-right:20px;">
+				<div class="tooltt text-danger"><b>Celebrant Name</b></div>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="celebrantnameIN" name="celebrantnameIN" class="form-control" style="width: 60px;" value="#444444"></div> 
+				<div id="celebrantnameS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				
+				<div style="">
+				<div class="tooltt text-danger"><b>Message</b></div>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="messagecelebIN" name="messagecelebIN" class="form-control" style="width: 60px;" value="#444444"></div> 
+				<div id="messagecelebS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				</div>
+				
+				<div class="col-lg-12" style="margin-top:20px;">
+				<div style="float: left; margin-right:40px;">
+				<div class="tooltt text-danger"><b>Courtesy Background</b></div>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="courtesybgIN" name="courtesybgIN" class="form-control" style="width: 60px;" value="#9d459d"></div> 
+				<div id="courtesybgS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				
+				<div style="">
+				<div class="tooltt text-danger"><b>Courtesy Text</b></div>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="courtesytxIN" name="courtesytxIN" class="form-control" style="width: 60px;" value="#ffffff"></div> 
+				<div id="courtesytxS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				</div>
+				
+				
+				</div>
+			<!--</div>-->
+				
+			<!--<div class="row">-->
+				<div id="btcdtxtedt" class="col-lg-12">
+				<center><button id="edittemplato" class="btn btn-danger btn-sm" style="margin-top:10px;">Edit Template</button></center>
+				<div class="col-lg-12">
+				<input type="file" name="celebrantPix" id="celebrantPix" accept="image/*" class="btn btn-secondary" style="margin-top:20px;" required>
+				<br><label class="fvlabel">Celebrant's Photo</label>
+				</div>
+				
+				<div class="col-lg-12">
+				
+				<input type="file" name="courtesyPix" id="courtesyPix" accept="image/*" class="btn btn-secondary" style="margin-top:20px;" required>
+				<br><label class="fvlabel">Courtesy (Photo)</label>
+				</div>
+				
+				<div class="col-lg-12">
+				<input id="celebrantName" name="celebrantName" type="text" autocomplete="off" class="form-control" placeholder="Celebrant's Name" style="margin-top:20px;">
+				</div>
+				
+				<div class="col-lg-12">
+				<textarea id="bithdayWish" name="bithdayWish" class="form-control" rows="5" style="margin-top:20px;"></textarea>
+				<label class="fvlabel">Your Birthday Messages...</label>
+				</div>
+				<div class="col-lg-12">
+				<input id="courtesyName" name="courtesyName" type="text" autocomplete="off" class="form-control" placeholder="Courtesy (Name)" style="margin-top:20px;" required>
+				</div>
+				
+				</div>
+				
+			<!--</div>-->
+			</div>
+			<!--<div class="row">-->
+				<div class="col-lg-12" id="fratool" style="margin-top: 20px;">
+				<button id="btdcarddone"  class="btn btn-secondary"><i class="ri-task-fill"></i> Done</button>
+				<button id="btdcardsavect"  class="btn btn-secondary"><i class="ri-task-fill"></i> Save </button>
+				<button id="btdcardclear"  class="btn btn-secondary"><i class="ri-task-fill"></i> Clear </button>
+				
+				<button id="btdcardedit" class="btn btn-secondary" style="display: none;"><i class="ri-edit-2-fill"></i> Edit</button>
+				
+				<button id="btdcarddownload" class="btn btn-secondary" style="display:none;"><i class="ri-save-3-fill"></i> Download</button>
+				
+				<button id="btdcardclearedit" class="btn btn-secondary" style="display: none;"><i class="ri-restart-fill"></i> Clear & Redo</button>
+				</div>
+			<!--</div>-->
+          </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+   
+	
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Sticker</h3>
+              <p>
+                Built by Princewill (WhatsApp 09010642707)
+              </p>
+              <div class="social-links mt-3">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filer.js"></script>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/foroyan.js"></script>
+
+</body>
+
+</html>

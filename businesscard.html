@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Projecting Rotary</title>
+  <meta property="og:image" content="https://phototag.netlify.app/assets/img/metabzcard.jpg" />
+  <meta property="og:title" content="Projecting Rotary" />
+  <meta property="og:description" content="Customise your Digital Business Card, that are shareable in all social media. Phototag Mobile Apps, Web Apps & Programs Projecting Rotary" />
+  <meta property="og:url" content="https://phototag.netlify.app/businesscard.html" />
+  <meta content="Customise your Digital Business Card, that are shareable in all social media. Phototag Mobile Apps, Web Apps & Programs Projecting Rotary" name="description">
+  <meta content="Business Card, Birthday Card, Business, Birthday, Design, Graphics, Color, Colour" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="font-awesome/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+.card {
+  
+  border-radius: 4px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: #4CAF50;
+  font-family: elmessiri-variable;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+}
+
+.card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.card svg {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+}
+
+.img-avatar {
+  margin-left: 95px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 50%;
+  /*border: 6px solid white;*/
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  top: 15px;
+  left: 85px;
+  z-index: 1;
+}
+
+@media (max-width: 500px) {
+	.img-avatar{
+		margin-left: 50px;
+	 }
+}
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 20px;
+}
+
+.title-total {
+  /*padding: 2.5em 1.5em 1.5em 1.5em;*/
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+path {
+  fill: white;
+}
+
+.img-portada {
+  width: 100%;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  }
+.vio {
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: #4CAF50;
+  cursor: pointer;
+  padding-right: 40px;
+}
+/*
+.vio:hover {
+  color: #4CAF50;
+  transform: rotate(22deg);
+}*/
+
+.fvlabel{
+  font-size: 11px;
+}
+.rlogoret{
+ position: absolute;
+ right: 0;
+ top: 0;
+ opacity: 0.1;
+ padding-top: 20px;
+ padding-right: 20px;
+}
+.rlogoltet{
+ position: absolute;
+ top: 0;
+ opacity: 0.1;
+ padding-top: 20px;
+ padding-right: 20px;
+}
+.rlogolet{
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ opacity: 0.1;
+ padding: 10px;
+}
+.rlogoebrt{
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+  padding-top: 2px;
+  width: 50%;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.rlogortp{
+	position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+    color: black;
+    font-size: 7px;
+    padding-left: 20%;
+}
+.cbsbtn-secondary {
+	font-size:8px;
+	text-align:center;
+	width: 40px; 
+	height: 20px;
+	color: #fff;  
+	cursor: pointer; 
+	border: 1px solid #6c757d; 
+	background-color: 
+	#6c757d; display: 
+	inline-block; 
+	border-radius: 0.25rem;
+}
+
+.cbsbtn-secondary:hover {
+    color: #fff;
+    background-color: #5c636a;
+    border-color: #565e64;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="./">Sticker</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="./">Home</a></li>
+
+          
+          <!--<li><a href="./" class="getstarted">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Photo Card</h2>
+          <ol>
+            <li><a href="./">Sticker</a></li>
+            <li>Photo Card</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+	<section id="team" class="team section-bg">
+      <div class="container">
+
+        
+		
+  
+  
+	  </div>
+	</section>
+	<style>
+
+ 
+
+	</style>
+	<!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        
+
+        <div class="row">
+
+    
+		  <div class="col-lg-6" >
+		  <div id="mirrowmirrow" style="background:#dbdbdb; max-width:100%; padding-left: 5px; padding-top:5px; padding-bottom: 5px; border-radius: 20px;">
+		  
+			<div id="BizCard" class="card">
+			
+			  <div id="myprofile" class="img-avatar" style="background-image: url('assets/img/testimonials-2.jpg'); background-size: cover;"></div>
+			  
+			  <div  class="card-text">
+				<div id="mybizads" class="portada" style="background-image: url('assets/img/portfolio-7.jpg'); background-position: bottom center; background-size: cover;"></div>
+				<div class="title-total">   
+				  <div id="biztitle" class="title">OTEL PHOTOGRAPHY STUDIO</div>
+				  <h2 id="profilename">Favour Oghenebrume </h2>
+			  
+				  <div id="bizmemo" class="desc">Otel Photography Studio is a professional photography studio that will provide photography services for students, graduates, families, and weddings. </div>
+				  <div id="contactseal" class="actions">
+					<div id="phoneContact" class="vio"><i style="font-size:20px;" class="fas fa-phone"></i><br> <span style="font-size:12px;">0803848938</span></div>
+					<div id="whatsaContact" class="vio"><i style="font-size:30px;" class="fab fa-whatsapp-square"></i><br> <span style="font-size:12px;">0803848938</span></div>
+				  </div>
+				  <div class="rlogoret"><img src="assets/img/543_rotary.png" alt="" width="140px"></div>
+				  <div class="rlogoltet"><img src="assets/img/543_rotary.png" alt="" width="140px"></div>
+				  <div class="rlogolet"><img src="assets/img/544_rotary.png" alt="" width="70px"></div>
+				  <div class="rlogortp">https://phototag.netlify.app/</div>
+				  <div id="clubname" class="rlogoebrt" style="font-size: 9px; font-weight: bold;">RAC ASABA URBAN </div>
+					
+				</div>
+			  </div>
+			  
+			 
+			  
+			</div>
+		  </div>
+		  </div>
+		  
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member align-items-start">
+			<div id="bcardtoolkit" class="col-lg-12" >
+			<!--<div class="row">-->
+				<div class="col-lg-12" style="margin-top:20px; margin-bottom:20px;" >
+				
+				<div style="float:left; margin-right:10px" class="text-danger"><b>Templates:</b></div> 
+				
+				<div id="mrntemp">
+				</div>
+				
+				</div>
+			<!--</div>-->
+			<!--<div class="row">-->
+				<div id="rscolors" class="col-lg-12" style="display:none;">
+				<div class=""><center><button id="goform" class="btn btn-warning btn-sm text-white">Back To Business Card</button></center></div>
+				
+				<div class="col-lg-12" style="margin-top:20px;">
+				<div style="float: left; margin-right:40px;">
+				<button id="profilepositionT" class="btn btn-danger btn-sm">Profile Position</button>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<button id="profilepositionMN" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-left"></i></button>
+				</div>
+				<div style="padding-left: 50px;">
+				<button id="profilepositionPS" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-right"></i></button>
+				</div>
+				</div>
+				</div>
+				
+				<div>
+				<button id="" class="btn btn-danger btn-sm">Biz Image Position</button>
+				<div style="padding-top: 5px;">
+				<button id="" class="cbsbtn-secondary" onclick="rav('center bottom')">Reset</button>
+				<button id="" class="cbsbtn-secondary" onclick="rav('left top')">L top</button>
+				<button id="" class="cbsbtn-secondary" onclick="rav('left bottom')">L B</button>
+				<button id="" class="cbsbtn-secondary" onclick="rav('right top')">R T</button>
+				<button id="" class="cbsbtn-secondary" onclick="rav('right center')">R C</button>
+				<button id="" class="cbsbtn-secondary" onclick="rav('right bottom')">R B</button>
+				<button id="" class="cbsbtn-secondary" onclick="rav('center top')">C T</button>
+				<button id="" class="cbsbtn-secondary" onclick="rav('center center')">C C</button>
+				<button id="" class="cbsbtn-secondary" onclick="ravv('adio')"><i class="fas fa-arrow-left"></i></button>
+				<button id="" class="cbsbtn-secondary" onclick="ravv('mdio')"><i class="fas fa-arrow-right"></i></button>
+				<!--<div style="float: left;">
+				<button id="" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-left"></i></button>
+				</div>
+				<div style="padding-left: 50px;">
+				<button id="" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-right"></i></button>
+				</div>-->
+				</div>
+				</div>
+				</div>
+				
+				<div class="col-lg-12" style="margin-top:20px;">
+				<button id="backprobrdT" class="btn btn-danger btn-sm">Background (Light Colour Recommended)</button>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="backprobrdIN" name="backprobrdIN" class="form-control" style="width: 60px;" value="#ffffff"></div> 
+				<div id="backprobrdS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				
+				<div class="col-lg-12" style="margin-top:20px;">
+				<button id="biznamecolorT" class="btn btn-danger btn-sm" >Business Name & Contact </button><br>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="biznamecolorIN" name="biznamecolorIN" class="form-control" style="width: 60px;" value="#4CAF50"></div> 
+				<div id="biznamecolorS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				
+				<div class="col-lg-12" style="margin-top:20px;">
+				<button id="nwrupclnaT" class="btn btn-danger btn-sm">Name, Write UP & Club Name </button>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="nwrupclnaIN" name="nwrupclnaIN" class="form-control" style="width: 60px;" value="#444444"></div> 
+				<div id="nwrupclnaS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				
+				
+				</div>
+			<!--</div>-->
+				
+			<!--<div class="row">-->
+				<div id="rspixtext" class="col-lg-12">
+				<center><button id="gocolour" class="btn btn-danger btn-sm">Edit  Template</button></center>
+				<div class="col-lg-12">
+				<input type="file" name="profilePix" id="profilePix" accept="image/*" class="btn btn-secondary" style="margin-top:20px;" required>
+				<br><label class="fvlabel">Personal Photo (HeadShot Recommended!)</label>
+				</div>
+				
+				<div class="col-lg-12">
+				
+				<input type="file" name="businessPix" id="businessPix" accept="image/*" class="btn btn-secondary" style="margin-top:20px;" required>
+				<br><label class="fvlabel">Business Photo</label>
+				</div>
+				
+				<div class="col-lg-12">
+				<input id="bizname" name="bizname" type="text" autocomplete="off" class="form-control" placeholder="Business Name" style="margin-top:20px;">
+				</div>
+				<div class="col-lg-12">
+				<input id="yourname" name="yourname" type="text" autocomplete="off" class="form-control" placeholder="Your Name" style="margin-top:20px;">
+				</div>
+				<div class="col-lg-12">
+				<textarea id="aboutbiz" name="aboutbiz" class="form-control" rows="5" style="margin-top:20px;"></textarea>
+				<label class="fvlabel">About Business...</label>
+				</div>
+				<div class="col-lg-12">
+				<input id="rclub" name="rclub" type="text" autocomplete="off" class="form-control" placeholder="Club (e.g RAC ASABA URBAN)" style="margin-top:20px;" required>
+				</div>
+				<div class="col-lg-12">
+				<input id="mcontact" name="mcontact" type="text" autocomplete="off" class="form-control" placeholder="Contact Number" style="margin-top:20px;" required>
+				</div>
+				<div class="col-lg-12">
+				<input id="wcontact" name="wcontact" type="text" autocomplete="off" class="form-control" placeholder="WhatsApp (Optional)" style="margin-top:20px;">
+				</div>
+				</div>
+				
+			<!--</div>-->
+			</div>
+			<!--<div class="row">-->
+				<div class="col-lg-12" id="fratool" style="margin-top: 20px;">
+				<button id="bcarddone"  class="btn btn-secondary"><i class="ri-task-fill"></i> Done</button>
+				<button id="bcardsavect"  class="btn btn-secondary"><i class="ri-task-fill"></i> Save </button>
+				<button id="bcardclear"  class="btn btn-secondary"><i class="ri-task-fill"></i> Clear </button>
+				
+				<button id="bcardedit" class="btn btn-secondary" style="display: none;"><i class="ri-edit-2-fill"></i> Edit</button>
+				
+				<button id="bcarddownload" class="btn btn-secondary" style="display:none;"><i class="ri-save-3-fill"></i> Download</button>
+				
+				<button id="bcardclearedit" class="btn btn-secondary" style="display: none;"><i class="ri-restart-fill"></i> Clear & Redo</button>
+				</div>
+			<!--</div>-->
+          </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+   
+	
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Sticker</h3>
+              <p>
+                Built by Princewill (WhatsApp 09010642707)
+              </p>
+              <div class="social-links mt-3">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filer.js"></script>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/bovamint.js"></script>
+
+</body>
+
+</html>
