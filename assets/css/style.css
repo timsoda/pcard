@@ -8,6 +8,37 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face{
+	src: url(../../fonts/RussoOne-Regular.ttf);
+	font-family: russo;
+}
+@font-face{
+	src: url(../../fonts/TitanOne-Regular.ttf);
+	font-family: titanone;
+}
+@font-face{
+	src: url(../../fonts/ElMessiri-VariableFont_wght.ttf);
+	font-family: elmessiri-variable;
+}
+@font-face{
+	src: url(../../fonts/Lobster-Regular.ttf);
+	font-family: lobster;
+}
+@font-face{
+	src: url(../../fonts/Lora-SemiBold.ttf);
+	font-family: lora;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	src: url(../../fonts/Lora-SemiBoldItalic.ttf);
+	font-family: lora;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
