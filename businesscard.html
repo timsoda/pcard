@@ -95,15 +95,22 @@
 	 }
 }
 .card-text {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+width: 60%;
+  /*display: grid;
+  grid-template-columns: 1fr 2fr;*/
   border-radius: 20px;
 }
-
+.portada {
+  width: 40%;
+  height: 100%
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  }
 .title-total {
   /*padding: 2.5em 1.5em 1.5em 1.5em;*/
+
   padding-top: 40px;
-  padding-left: 20px;
+  
 }
 
 path {
@@ -114,19 +121,14 @@ path {
   width: 100%;
 }
 
-.portada {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  }
+
 .vio {
   border: none;
   background: none;
   font-size: 24px;
   color: #4CAF50;
   cursor: pointer;
-  padding-right: 40px;
+  padding-right: 10px;
 }
 /*
 .vio:hover {
@@ -167,6 +169,7 @@ path {
   width: 50%;
   text-transform: uppercase;
   font-family: monospace;
+  padding-left: 20px;
 }
 .rlogortp{
 	position: absolute;
@@ -270,17 +273,17 @@ path {
 			<div id="BizCard" class="card">
 			
 			  <div id="myprofile" class="img-avatar" style="background-image: url('assets/img/testimonials-2.jpg'); background-size: cover;"></div>
-			  
+			  <div id="mybizads" class="portada" style="background-image: url('assets/img/portfolio-7.jpg'); background-position: bottom center; background-size: cover;"></div>
 			  <div  class="card-text">
-				<div id="mybizads" class="portada" style="background-image: url('assets/img/portfolio-7.jpg'); background-position: bottom center; background-size: cover;"></div>
+				
 				<div class="title-total">   
 				  <div id="biztitle" class="title">OTEL PHOTOGRAPHY STUDIO</div>
 				  <h2 id="profilename">Favour Oghenebrume </h2>
 			  
 				  <div id="bizmemo" class="desc">Otel Photography Studio is a professional photography studio that will provide photography services for students, graduates, families, and weddings. </div>
 				  <div id="contactseal" class="actions">
-					<div id="phoneContact" class="vio"><i style="font-size:20px;" class="fas fa-phone"></i><br> <span style="font-size:12px;">09010642707</span></div>
-					<div id="whatsaContact" class="vio"><i style="font-size:30px;" class="fab fa-whatsapp-square"></i><br> <span style="font-size:12px;">09010642707</span></div>
+					<div id="phoneContact" class="vio"><i style="font-size:20px;" class="fas fa-phone"></i><br> <span style="font-size:12px;">08129647589</span></div>
+					<div id="whatsaContact" class="vio"><i style="font-size:30px;" class="fab fa-whatsapp-square"></i><br> <span style="font-size:12px;">08129647589</span></div>
 				  </div>
 				  <div class="rlogoret"><img src="assets/img/543_rotary.png" alt="" width="140px"></div>
 				  <div class="rlogoltet"><img src="assets/img/543_rotary.png" alt="" width="140px"></div>
@@ -316,19 +319,19 @@ path {
 				<div class=""><center><button id="goform" class="btn btn-warning btn-sm text-white">Back To Business Card</button></center></div>
 				
 				<div class="col-lg-12" style="margin-top:20px;">
-				<div style="float: left; margin-right:40px;">
+				<div style="float: left;margin-right: 0px;width: 50%;">
 				<button id="profilepositionT" class="btn btn-danger btn-sm">Profile Position</button>
 				<div style="padding-top: 5px;">
 				<div style="float: left;">
-				<button id="profilepositionMN" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-left"></i></button>
+				<button id="profilepositionMN" class="cbsbtn-secondary"><i class="fas fa-arrow-left"></i></button>
 				</div>
 				<div style="padding-left: 50px;">
-				<button id="profilepositionPS" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-right"></i></button>
+				<button id="profilepositionPS" class="cbsbtn-secondary"><i class="fas fa-arrow-right"></i></button>
 				</div>
 				</div>
 				</div>
 				
-				<div>
+				<div style="width: 50%; float: left;">
 				<button id="" class="btn btn-danger btn-sm">Biz Image Position</button>
 				<div style="padding-top: 5px;">
 				<button id="" class="cbsbtn-secondary" onclick="rav('center bottom')">Reset</button>
@@ -456,7 +459,7 @@ path {
             <div class="footer-info">
               <h3>Sticker</h3>
               <p>
-                Built by Princewill (WhatsApp 09010642707)
+                Built by Princewill (WhatsApp +234 081 2964 7589)
               </p>
               <div class="social-links mt-3">
                 
