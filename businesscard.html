@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Projecting Rotary</title>
+  <title>Projecting Rotary ::: Business Card</title>
   <meta property="og:image" content="https://phototag.netlify.app/assets/img/metabzcard.jpg" />
-  <meta property="og:title" content="Projecting Rotary" />
+  <meta property="og:title" content="Projecting Rotary ::: Business Card" />
   <meta property="og:description" content="Customise your Digital Business Card, that are shareable in all social media. Phototag Mobile Apps, Web Apps & Programs Projecting Rotary" />
   <meta property="og:url" content="https://phototag.netlify.app/businesscard.html" />
   <meta content="Customise your Digital Business Card, that are shareable in all social media. Phototag Mobile Apps, Web Apps & Programs Projecting Rotary" name="description">
@@ -102,7 +102,6 @@ width: 60%;
 }
 .portada {
   width: 40%;
-  height: 100%
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   }
@@ -110,7 +109,8 @@ width: 60%;
   /*padding: 2.5em 1.5em 1.5em 1.5em;*/
 
   padding-top: 40px;
-  
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 path {
@@ -198,6 +198,11 @@ path {
     background-color: #5c636a;
     border-color: #565e64;
 }
+
+.cbsbtn-secondary.active{
+	background-color: #dc3545;
+    border-color: #dc3545;
+}
   </style>
 
 </head>
@@ -270,13 +275,13 @@ path {
 		  <div class="col-lg-6" >
 		  <div id="mirrowmirrow" style="background:#dbdbdb; max-width:100%; padding-left: 5px; padding-top:5px; padding-bottom: 5px; border-radius: 20px;">
 		  
-			<div id="BizCard" class="card">
+			<div  class="card">
 			
 			  <div id="myprofile" class="img-avatar" style="background-image: url('assets/img/testimonials-2.jpg'); background-size: cover;"></div>
 			  <div id="mybizads" class="portada" style="background-image: url('assets/img/portfolio-7.jpg'); background-position: bottom center; background-size: cover;"></div>
 			  <div  class="card-text">
 				
-				<div class="title-total">   
+				<div id="BizCard" class="title-total">   
 				  <div id="biztitle" class="title">OTEL PHOTOGRAPHY STUDIO</div>
 				  <h2 id="profilename">Favour Oghenebrume </h2>
 			  
@@ -307,7 +312,7 @@ path {
 			<!--<div class="row">-->
 				<div class="col-lg-12" style="margin-top:20px; margin-bottom:20px;" >
 				
-				<div style="float:left; margin-right:10px" class="text-danger"><b>Templates:</b></div> 
+				 
 				
 				<div id="mrntemp">
 				</div>
@@ -355,31 +360,49 @@ path {
 				</div>
 				
 				<div class="col-lg-12" style="margin-top:20px;">
-				<button id="backprobrdT" class="btn btn-danger btn-sm">Background (Light Colour Recommended)</button>
-				<div style="padding-top: 5px;">
-				<div style="float: left;">
-				<input type="color" id="backprobrdIN" name="backprobrdIN" class="form-control" style="width: 60px;" value="#ffffff"></div> 
+				<input type="hidden" id="bizbgposIN" name="bizbgposIN">
+				<div><button id="backprobrdT" class="btn btn-danger btn-sm">Background </button> <button id="manson1bzcard" class="cbsbtn-secondary active">1</button> <button id="manson2bzcard" class="cbsbtn-secondary">2</button> <button id="manson3bzcard" class="cbsbtn-secondary">3</button></div> 
+				
+				<div id="setofbizbg" style="padding-top: 5px;">
+				<div style="float: left;"><input type="color" id="backprobrd1IN" name="backprobrd1IN" class="form-control" style="width: 60px;" value="#ffffff"></div> 
 				<div id="backprobrdS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
 				</div>
+				<div id="directionlbzc" style="margin-top:8px;"></div>
 				</div>
 				
 				<div class="col-lg-12" style="margin-top:20px;">
-				<button id="biznamecolorT" class="btn btn-danger btn-sm" >Business Name & Contact </button><br>
+				<div style="float:left; margin-right:5px;">
+				<button id="biznamecolorT" class="btn btn-danger btn-sm" style="font-size: 9px;">Business Name </button><br>
 				<div style="padding-top: 5px;">
 				<div style="float: left;">
 				<input type="color" id="biznamecolorIN" name="biznamecolorIN" class="form-control" style="width: 60px;" value="#4CAF50"></div> 
-				<div id="biznamecolorS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				<div id="biznamecolorS" style="font-size: 8px; padding-top: 4px; padding-left: 60px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
 				</div>
 				</div>
 				
-				<div class="col-lg-12" style="margin-top:20px;">
-				<button id="nwrupclnaT" class="btn btn-danger btn-sm">Name, Write UP & Club Name </button>
+				<div style="float:left; margin-right:5px;">
+				<button id="phwhacntT" class="btn btn-danger btn-sm" style="font-size: 9px;"> Contacts </button>
+				<div style="padding-top: 5px;">
+				<div style="float: left;">
+				<input type="color" id="phwhacntIN" name="phwhacntIN" class="form-control" style="width: 60px;" value="#4CAF50"></div> 
+				<div id="phwhacntS" style="font-size: 9px; padding-top: 4px; padding-left: 60px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				</div>
+				</div>
+				
+				<div >
+				<button id="nwrupclnaT" class="btn btn-danger btn-sm" style="font-size: 9px;"> Name (Describe) </button>
 				<div style="padding-top: 5px;">
 				<div style="float: left;">
 				<input type="color" id="nwrupclnaIN" name="nwrupclnaIN" class="form-control" style="width: 60px;" value="#444444"></div> 
-				<div id="nwrupclnaS" style="font-size: 12px; padding-top: 4px; padding-left: 70px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
+				<div id="nwrupclnaS" style="font-size: 9px; padding-top: 4px; padding-left: 60px; text-decoration: underline;  color: steelblue; cursor: pointer;">Apply</div>
 				</div>
 				</div>
+				
+				
+				
+				</div>
+				
+				
 				
 				
 				</div>
